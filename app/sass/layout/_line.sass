@@ -1,0 +1,210 @@
+.line 
+  padding-bottom: 55px
+  background-color: $color-blue
+  +media-sm 
+    padding-bottom: 30px
+
+.line__slider-wrap
+  margin-right: -45px
+
+.line__top 
+  display: flex 
+  justify-content: space-between
+  align-items: center
+  +media-md 
+    margin-bottom: 10px
+
+.line__title 
+  position: relative
+  font-weight: 900
+  font-family: $font-mabry
+  color: #fff
+  +media-sm 
+    width: 180px
+.line__title-small
+  font-size: 35px
+  position: absolute
+  left: 0
+  top: 55% 
+  transform: translate(0, -50%)
+  +media-md
+    font-size: 30px
+.line__title-big
+  padding-left: 90px
+  font-size: 105px
+  opacity: .07
+  +media-lg
+    font-size: 80px
+  +media-md
+    padding-left: 50px
+    font-size: 57px
+  +media-sm
+    padding-left: 0px
+    font-size: 40px
+
+.line__view 
+  min-width: 110px
+  color: #fff 
+  a
+    position: relative
+    padding-right: 40px 
+    font-size: 17px
+    font-weight: 500
+    &::after 
+      content: ''
+      position: absolute
+      z-index: 10
+      right: 0
+      top: 50%
+      transform: translate(0, -50%)
+      width: 25px
+      height: 25px
+      border-radius: 50%
+      background: url('../img/view.svg') no-repeat center
+
+
+// -------------- customaze -----------------
+
+.line--blue
+  .card__title 
+    color: #fff
+  .card__subtitle 
+    color: #fff
+  .card__img 
+    span 
+      background-color: #fff
+      color: $color-blue
+
+.line--blue-light
+  background-color: $color-blue-light
+  .card__title 
+    color: #fff
+  .card__subtitle 
+    color: #fff
+  .card__img 
+    span 
+      background-color: #fff
+      color: $color-blue-light
+
+.line--purple
+  background: #fff
+  .line__title 
+    color: $color-purple
+  .line__view 
+    color: $color-purple
+  .line__view a::after
+    background: url('../img/view-purple.svg') no-repeat center
+  .card__title 
+    color: $color-purple
+  .card__subtitle 
+    color: $color-purple
+  .card__img 
+    span 
+      background-color: $color-purple
+      color: #fff 
+
+.line--purple-light
+  background: #fff
+  .line__title 
+    color: $color-purple-light
+  .line__view 
+    color: $color-purple-light
+  .line__view a::after
+    background: url('../img/view-purple-light.svg') no-repeat center
+  .card__title 
+    color: $color-purple-light
+  .card__subtitle 
+    color: $color-purple-light
+  .card__img 
+    span 
+      background-color: $color-purple-light
+      color: #fff 
+
+.line--purple-fill
+  background: $color-purple-dark
+  .line__title 
+    color: #fff 
+  .line__view 
+    color: #fff 
+  .line__view a::after
+    background: url('../img/view.svg') no-repeat center
+  .card__title 
+    color: #fff 
+  .card__subtitle 
+    color: #fff 
+  .card__img 
+    span 
+      background-color: #fff 
+      color: $color-purple-dark
+
+.line--pink
+  background: $color-pink
+  .line__title 
+    color: #fff
+  .line__view 
+    color: #fff
+  .line__view a::after
+    background: url('../img/view.svg') no-repeat center
+  .card__title 
+    color: #fff
+  .card__subtitle 
+    color: #fff
+  .card__img 
+    span 
+      background-color: #fff
+      color: $color-pink
+
+.line--green
+  background: $color-green
+  .line__title 
+    color: #fff
+  .line__view 
+    color: #fff
+  .line__view a::after
+    background: url('../img/view.svg') no-repeat center
+  .card__title 
+    color: #fff
+  .card__subtitle 
+    color: #fff
+  .card__img 
+    span 
+      background-color: #fff
+      color: $color-green
+
+.line--green-white
+  background: #fff
+  .line__title 
+    color: $color-green
+  .line__view 
+    color: $color-green
+  .line__view a::after
+    background: url('../img/view-green.svg') no-repeat center
+  .card__title 
+    color: $color-green
+  .card__subtitle 
+    color: $color-green
+  .card__img 
+    span 
+      background-color: $color-green
+      color: #fff
+
+.line--blue-white
+  background: #fff
+  .line__title 
+    color: $color-blue
+  .line__view 
+    color: $color-blue
+  .line__view a::after
+    background: url('../img/view-blue.svg') no-repeat center
+  .card__title 
+    color: $color-blue
+  .card__subtitle 
+    color: $color-blue
+  .card__img 
+    span 
+      background-color: $color-blue
+      color: #fff
+
+
+   
+

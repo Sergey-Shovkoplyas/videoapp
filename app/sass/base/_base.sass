@@ -1,18 +1,42 @@
+*, 
+*:before, 
+*:after 
+  box-sizing: border-box
+
+html, 
+body 
+  overflow-x: hidden
+
+  
 body 
   min-width: 320px
-  font-family: "Arial", sans-serif
-  font-size: 18px
+  font-family: "Montserrat", sans-serif
+  font-size: 16px
   line-height: 1.2
 
-.row 
-  display: flex
-  flex-wrap: wrap
-  margin: 0 -15px
+h1
+  margin: 0
+  text-align: center
+  color: #393635
+  font-weight: 900
+  font-size: 120px
+  font-family: $font-mabry
+  +media-md 
+    font-size: 100px
+  +media-sm
+    font-size: 55px
+
+
+a 
+  text-decoration: none
+  color: inherit
   
 .container
-  max-width: 1200px
+  max-width: 1850px
   margin: 0 auto
   padding: 0 15px
+  &--1410
+    max-width: 1410px
   +media-lg
     max-width: 960px
   +media-md
@@ -21,3 +45,8 @@ body
     max-width: 430px
   +media-xs
     width: auto
+
+.main-content
+  margin-top: 130px
+  +media-sm 
+    margin-top: 83px

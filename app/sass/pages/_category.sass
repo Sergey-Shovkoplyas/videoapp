@@ -1,0 +1,49 @@
+.category__title-wrap
+  text-align-last: center
+  
+.category__title 
+  position: relative
+  padding-top: 60px 
+  margin-bottom: 110px
+  display: inline-block
+  &::after 
+    position: absolute
+    content: ''
+    right: 20px 
+    bottom: 0px 
+    width: 210px
+    height: 8px 
+    background-color: $color-blue
+  +media-sm 
+    padding-top: 40px
+    margin-bottom: 60px
+    &::after
+      right: 10px
+      width: 120px
+      height: 6px
+
+.category__crumbs
+  margin-bottom: 33px
+  +media-sm 
+    margin-bottom: 20px
+
+
+// ----------------- crumbs --------------------------
+
+.crumbs
+  padding: 0
+  margin: 0
+  list-style: none 
+  li 
+    display: inline-block
+    margin-right: 5px
+  a,
+  span 
+    font-size: 16px 
+    font-weight: 500
+    color: $color-blue
+  a 
+    transition: .3
+    opacity: .4
+  a:hover 
+    opacity: 1
