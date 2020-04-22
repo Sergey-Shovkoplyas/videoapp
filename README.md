@@ -1,5 +1,8 @@
 # Video app
 
+- https://sergey-shovkoplyas.github.io/videoapp/app/index.html
+- https://sergey-shovkoplyas.github.io/videoapp/app/category.html 
+
 Start template with (optional)
 - normalize.css
 - jquery-3.4.1.min.js
