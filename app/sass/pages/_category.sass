@@ -1,10 +1,13 @@
 .category__title-wrap
-  text-align-last: center
+  padding-top: 60px 
+  margin-bottom: 110px
+  text-align: center
+  +media-sm 
+    padding-top: 40px
+    margin-bottom: 60px
   
 .category__title 
   position: relative
-  padding-top: 60px 
-  margin-bottom: 110px
   display: inline-block
   &::after 
     position: absolute
@@ -15,8 +18,6 @@
     height: 8px 
     background-color: $color-blue
   +media-sm 
-    padding-top: 40px
-    margin-bottom: 60px
     &::after
       right: 10px
       width: 120px

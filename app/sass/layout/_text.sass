@@ -1,0 +1,100 @@
+.text 
+  display: flex
+  justify-content: space-between
+  margin-bottom: 155px
+  a 
+    color: $color-blue
+  a:hover 
+    text-shadow: 0 0 0.5px $color-blue
+  +media-sm 
+    margin-bottom: 50px
+    flex-wrap: wrap
+  
+
+.text__left
+  width: 290px
+  margin-right: 20px
+  +media-md
+    width: 400px
+  +media-sm 
+    width: 100%
+
+.text__right
+  width: 1140px
+  padding-right: 50px
+  +media-lg
+    padding-right: 0
+  +media-sm 
+    width: 100%
+
+
+.text__list-title 
+  margin-bottom: 25px
+  font-size: 16px
+  font-weight: 700
+  color: $color-blue
+
+.text__list
+  padding: 0
+  margin: 0
+  list-style-position: inside
+  li
+    margin-bottom: 25px
+    font-size: 16px
+    font-weight: 500
+    line-height: 1.56
+    color: $color-blue
+  li.active 
+    font-weight: 700
+  +media-sm 
+    margin-bottom: 19px
+
+
+.text__content 
+  color: #393635
+  font-weight: 500
+  font-size: 18px
+  line-height: 2.33
+  p 
+    margin: 0
+    margin-bottom: 50px
+  ul 
+    margin: 0
+    padding: 0
+    list-style-position: inside
+  li 
+    color: $color-blue
+  li span
+    color: #393635
+  +media-sm 
+    font-size: 17px
+    line-height: 1.8
+    p 
+      margin-bottom: 25px
+  
+
+.text__content-title 
+  font-size: 22px
+  font-weight: 700
+  margin-bottom: 50px
+  &--question
+    color: $color-blue
+  +media-sm
+    margin-bottom: 25px
+
+.text__content-subtitle
+  font-weight: 700
+  margin-bottom: 50px
+  +media-sm
+    margin-bottom: 25px
+
+.text__content-part
+  font-weight: 700
+
+.text__content-notice
+  font-weight: 700
+  text-transform: uppercase
+
+.text__content-mark
+  font-weight: 600
+
