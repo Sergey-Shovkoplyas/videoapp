@@ -14,6 +14,7 @@
 - https://sergey-shovkoplyas.github.io/videoapp/app/wallet.html 
 - https://sergey-shovkoplyas.github.io/videoapp/app/category-2.html 
 - https://sergey-shovkoplyas.github.io/videoapp/app/celebrity.html 
+- https://sergey-shovkoplyas.github.io/videoapp/app/download.html 
 
 Start template with (optional)
 - normalize.css
