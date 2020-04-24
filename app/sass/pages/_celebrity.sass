@@ -1,0 +1,434 @@
+.celebrity__profile
+  max-width: 1275px 
+  margin: 0 auto
+  margin-bottom: 123px
+  padding-top: 77px
+  +media-sm 
+    padding-top: 30px
+  
+  
+.celebrity__profile-row
+  display: flex
+  justify-content: space-between
+  +media-sm 
+    flex-wrap: wrap
+
+
+.celebrity__profile-left
+  width: 350px
+  margin-left: 80px
+  +media-md 
+    margin-left: 0
+ 
+
+.celebrity__profile-right
+  width: 650px
+  margin-right: 97px
+  margin-top: 50px
+  margin-left: 20px
+  +media-lg 
+    margin-right: 0px
+  +media-md 
+    margin-top: 0
+  +media-sm
+    width: 100%
+    margin-left: 0
+    margin-top: 30px
+
+.celebrity__profile-video-wrap
+  position: relative 
+  &::before 
+    content: ''
+    position: absolute
+    z-index: -1
+    left: -28px
+    top: 64px
+    width: 100%
+    height: 100%
+    border-radius: 15px
+    background-color: $color-blue
+  +media-md 
+    &::before 
+      top: 30px
+  +media-sm 
+    &::before 
+      left: 0
+      top: 15px
+
+
+.celebrity__profile-video
+  border-radius: 15px
+  overflow: hidden
+  +media-md
+    width: 250px
+    img 
+      width: 100%
+  +media-sm 
+    margin: 0 auto
+
+.celebrity__profile-toptitle 
+  margin-bottom: 27px
+  font-size: 17px
+  font-weight: 500
+  color: $color-blue
+
+.celebrity__profile-title
+  margin-bottom: 20px
+  font-size: 55px 
+  font-weight: 900
+  color: #393635
+  img 
+    display: inline-block
+    vertical-align: middle
+    width: 46px
+    height: 46px
+    border-radius: 50%
+  +media-sm 
+    font-size: 40px
+
+
+.celebrity__profile-text 
+  margin-bottom: 27px 
+  font-size: 17px
+  line-height: 1.765
+  color: #393635
+
+.celebrity__profile-responds
+  position: relative
+  padding-left: 36px
+  margin-bottom: 40px
+  font-size: 17px
+  color: $color-blue
+  font-weight: 600
+  &::before 
+    content: ""
+    position: absolute
+    top: 50%
+    left: 0
+    transform: translate(0, -50%)
+    width: 22px
+    height: 22px
+    background: url('../img/celebrity/responds.png')
+  +media-sm 
+    padding-left: 27px
+
+.celebrity__profile-buttons 
+  display: flex 
+  margin-bottom: 36px
+  button 
+    margin-right: 20px
+  +media-sm 
+    margin-bottom: 20px
+    flex-direction: column
+    button 
+      margin-bottom: 20px
+      margin-right: 0px
+
+.celebrity__profile-social
+  display: flex
+  justify-content: space-between
+  max-width: 150px
+  a
+    transition: .3s
+  a:hover 
+    transform: scale(1.1)
+  +media-sm 
+    margin: 0 auto
+
+
+// --------------------- celebrity__info ----------------------
+
+.celebrity__info
+  display: flex
+  justify-content: space-between
+  margin-top: -40px
+  background: $color-blue 
+  padding: 73px 75px 55px 84px
+  border-radius: 10px
+  color: #fff
+  +media-lg 
+    margin-top: 20px
+  +media-md 
+    padding: 40px
+    padding-bottom: 20px
+  +media-sm 
+    padding: 20px
+    padding-bottom: 20px
+    flex-direction: column
+
+.celebrity__info-left
+  width: 375px
+  margin-right: 20px
+  +media-sm 
+    width: 100%
+
+.celebrity__info-right
+  width: 650px
+  +media-lg 
+    width: 390px
+  +media-sm 
+    width: 100%
+
+.celebrity__info-type 
+  color: #fff
+  margin-bottom: 35px
+
+.celebrity__info-type-name
+  display: inline-block
+  margin-right: 20px
+  opacity: .4
+  text-transform: uppercase
+  font-size: 15px
+  font-weight: 500
+
+.celebrity__info-type-text
+  display: inline-block
+  font-size: 16px
+
+.celebrity__info-type-tags 
+  .button 
+    display: inline-block
+    margin-right: 5px
+    margin-bottom: 10px
+
+
+.celebrity__info-title 
+  margin-bottom: 18px
+  position: relative
+  font-weight: 900
+  font-family: $font-mabry
+  color: #fff
+  +media-sm 
+    width: 180px
+.celebrity__info-title-small
+  font-size: 30px
+  position: absolute
+  left: 0
+  top: 55% 
+  transform: translate(0, -50%)
+  +media-md
+    font-size: 25px
+.celebrity__info-title-big
+  padding-left: 90px
+  font-size: 70px
+  opacity: .07
+  +media-lg
+    font-size: 50px
+  +media-md
+    padding-left: 60px
+    font-size: 40px
+  +media-sm
+    padding-left: 0px
+    font-size: 30px
+
+.celebrity__info-about 
+  margin-bottom: 40px
+  font-size: 18px
+  line-height: 1.94
+
+.celebrity__info-stars
+  +media-sm 
+    margin-bottom: 10px
+
+.celebrity__info-stars-wrap 
+  display: flex
+  justify-content: space-between
+  +media-sm 
+    flex-direction: column
+
+.celebrity__info-stars-link 
+  font-size: 14px
+  font-weight: 500
+  text-transform: uppercase
+
+
+// -------------------- celebrity__about -----------------------
+
+.celebrity__about
+  padding: 71px 0px 95px
+  background-color: $color-blue
+  color: #fff
+  margin-bottom: 57px
+  +media-sm 
+    padding: 30px 0px 
+    margin-bottom: 30px
+
+.celebrity__about-title
+  position: relative
+  font-family: $font-mabry
+  font-weight: 900
+  text-align: center
+  margin-bottom: 67px
+  +media-sm
+    margin-bottom: 40px
+
+.celebrity__about-title-big
+  font-size: 120px
+  opacity: 0.07
+  +media-lg 
+    font-size: 85px
+  +media-sm
+    font-size: 55px
+
+.celebrity__about-title-small
+  font-size: 50px
+  position: absolute
+  top: 45px
+  left: 50%
+  transform: translate(-50%, 0)
+  +media-lg
+    top: 15px
+  +media-md
+    top: 40px
+  +media-sm
+    top: 20px
+    font-size: 40px
+
+.celebrity__about-row 
+  display: flex
+  justify-content: space-between
+  max-width: 935px 
+  margin: 0 auto 
+  +media-sm 
+    flex-direction: column
+    align-items: center
+
+.celebrity__about-item 
+  width: 33.33%
+  text-align: center
+  +media-sm
+    width: 100%
+    margin-bottom: 30px
+
+.celebrity__about-img
+  margin-bottom: 52px
+  +media-sm
+    margin-bottom: 20px
+
+.celebrity__about-text
+  font-size: 20px
+  line-height: 1.9
+  font-weight: 600
+  text-transform: uppercase
+
+
+// -------------------- celebrity__latest -----------------------
+
+.celebrity__latest
+  margin-bottom: 180px
+  +media-md 
+    margin-bottom: 100px
+  +media-sm
+    margin-bottom: 60px
+
+.celebrity__latest-title
+  position: relative
+  font-family: $font-mabry
+  font-weight: 900
+  text-align: center
+  margin-bottom: 84px
+  color: $color-purple
+  +media-sm
+    margin-bottom: 40px
+
+.celebrity__latest-title-big
+  font-size: 105px
+  opacity: 0.07
+  +media-lg 
+    font-size: 85px
+  +media-sm
+    font-size: 55px
+
+.celebrity__latest-title-small
+  font-size: 50px
+  position: absolute
+  bottom: -15px
+  left: 50%
+  transform: translate(-50%, 0)
+ 
+.celebrity__latest-row
+  max-width: 1150px
+  display: flex
+  margin: 0 auto
+  flex-wrap: wrap
+
+
+.celebrity__latest-item
+  width: 33.33%
+  padding: 23px
+  +media-md 
+    width: 50%
+  +media-sm
+    width: 100%
+
+
+.celebrity__latest-video
+  border-radius: 12px
+  overflow: hidden
+  position: relative
+  img 
+    width: 100%
+
+.celebrity__latest-head
+  position: relative
+  padding: 20px 28px
+  background-color: $color-purple
+
+.celebrity__latest-title-text
+  display: block
+  padding-left: 56px
+  font-size: 15px
+  font-weight: 500
+  color: #fff
+  text-transform: uppercase
+
+.celebrity__latest-title-decor
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  left: 28px
+  top: 50%
+  transform: translate(0, -50%)
+  width: 35px
+  height: 35px
+  background: #fff
+  border-radius: 50%
+  color: $color-purple
+  font-size: 16px 
+  font-weight: 500
+
+.celebrity__latest-details
+  display: block
+  padding: 6px 18px
+  position: absolute
+  border-radius: 15px
+  bottom: 18px 
+  left: 28px
+  font-size: 15px
+  background-color: $color-purple
+  color: #fff
+  transition: .3s
+  &:hover 
+    transform: scale(1.05)
+
+.celebrity__latest-like
+  display: flex
+  justify-content: center
+  align-items: center
+  position: absolute
+  bottom: 18px
+  right: 18px
+  width: 33px
+  height: 33px
+  border-radius: 50%
+  background-color: $color-purple
+  transition: .3s
+  span 
+    display: block
+    width: 16px
+    height: 14px
+    background: url('../img/celebrity/like.svg')
+  
+
+
