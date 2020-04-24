@@ -28,6 +28,11 @@
   +media-sm 
     margin-bottom: 20px
 
+.category-2__crumbs
+  margin-bottom: 80px
+  +media-sm 
+    margin-bottom: 30px
+
 // ----------------- category line__slider-category --------------------------
 
 .category
@@ -71,3 +76,59 @@
     opacity: .4
   a:hover 
     opacity: 1
+
+
+// ----------------- category-2 --------------------------
+.category-2__type
+  margin-bottom: 80px
+  +media-sm 
+    margin-bottom: 30px
+
+.category-2__title
+  margin-bottom: 40px
+  font-family: $font-mabry
+  font-weight: 900
+  color: $color-blue
+  font-size: 35px
+  +media-sm 
+    margin-bottom: 25px
+
+.category-2__list 
+  padding: 0
+  margin: 0
+  list-style: none 
+  display: flex
+  flex-direction: column
+  flex-wrap: wrap
+  height: 80px
+  li 
+    margin-bottom: 20px
+  a 
+    color: $color-blue
+    font-size: 14px
+    font-weight: 700
+  span 
+    color: #393635
+    font-size: 17px
+    font-weight: 500
+    margin-right: 17px
+  +media-lg 
+    height: 120px
+  +media-md
+    height: 160px
+  +media-sm
+    height: auto
+    flex-direction: row
+    li 
+      width: 50%
+
+
+.category-2__voice 
+  color: $color-blue
+  font-size: 14px
+  font-weight: 700
+  span 
+    color: #393635
+    font-size: 17px
+    font-weight: 500
+    margin-right: 17px
