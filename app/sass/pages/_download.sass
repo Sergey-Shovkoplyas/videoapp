@@ -1,0 +1,175 @@
+
+.download__row
+  max-width: 1200px
+  margin: 0 auto
+  display: flex
+  justify-content: space-between
+  padding-top: 70px
+  margin-bottom: 250px
+  +media-md 
+    padding-top: 40px
+    margin-bottom: 100px
+  +media-sm
+    flex-direction: column
+    padding-top: 30px
+    margin-bottom: 50px
+
+.download__left
+  width: 500px
+  margin-right: 20px
+  +media-sm
+    margin-bottom: 40px
+    width: 100%
+
+.download__right
+  width: 560px
+  +media-sm
+    
+    width: 100%
+
+.download__video-wrap
+  position: relative 
+  &::before 
+    content: ''
+    position: absolute
+    z-index: -1
+    left: -40px
+    top: 40px
+    width: 100%
+    height: 100%
+    border-radius: 15px
+    background-color: $color-blue
+  +media-md 
+    &::before 
+      left: -24px
+      top: 30px
+  +media-sm 
+    &::before 
+      left: 0
+      top: 23px
+
+.download__video
+  border-radius: 15px
+  overflow: hidden
+  +media-md
+    width: 250px
+    img 
+      width: 100%
+  +media-sm 
+    margin: 0 auto
+
+
+// ----------------- right ----------------
+
+.download__like
+  display: inline-block
+  padding: 14px 24px
+  background-color: $color-blue
+  border-radius: 27px
+  margin-top: 2px
+  margin-bottom: 40px
+  span
+    position: relative
+    display: inline-block
+    vertical-align: middle
+    color: #fff
+    font-size: 22px
+    font-weight: 500
+    padding-left: 40px
+    &::before 
+      content: ''
+      position: absolute
+      top: 50%
+      left: 0
+      transform: translate(0, -50%)
+      width: 30px
+      height: 26px
+      background: url('../../img/download/heart.svg') no-repeat center
+  +media-sm 
+    margin-bottom: 20px
+
+
+.download__toptitle 
+  margin-bottom: 27px
+  font-size: 17px
+  font-weight: 500
+  color: $color-blue
+
+.download__title
+  display: flex
+  align-items: center
+  justify-content: space-between
+  +media-sm
+    flex-direction: column
+
+
+.download__title-text
+  margin-bottom: 13px
+  font-size: 55px 
+  font-weight: 900
+  color: #393635
+  +media-sm 
+    font-size: 40px
+
+.download__social
+  display: flex
+  a 
+    display: flex
+    justify-content: center
+    text-align: center
+    margin-left: 14px
+    width: 33px
+    height: 33px
+    border-radius: 50%
+    background-color: $color-blue
+    transition: .3s
+  a:hover 
+    transform: scale(1.05)
+  img 
+    transform: scale(0.8)
+  +media-sm
+    margin-bottom: 15px
+
+.download__language
+  font-size: 16px
+  font-weight: 500
+  color: #606060
+  margin-bottom: 64px
+  span 
+    color: $color-blue
+  +media-sm 
+    margin-bottom: 35px
+
+.download__book
+  display: flex
+  justify-content: space-between
+  align-items: center
+  max-width: 407px
+  +media-sm 
+    flex-direction: column
+    align-items: center
+    text-align: center
+
+.download__book-ava
+  width: 133px
+  height: 133px 
+  border-radius: 50%
+  overflow: hidden
+  img 
+    width: 100%
+  +media-md
+    margin-right: 30px
+  +media-sm
+    margin-right: 0px
+
+.download__book-item
+  width: 240px
+
+.download__book-title 
+  font-size: 29px
+  font-weight: 900
+  margin-bottom: 20px
+
+.download__book-btn
+  .button
+    padding: 17px 38px
