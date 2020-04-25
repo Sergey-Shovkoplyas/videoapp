@@ -1,0 +1,181 @@
+.sign-wrap 
+  padding-top: 150px
+  margin-bottom: 184px
+  +media-1360
+    margin-left: auto 
+    margin-right: auto
+  +media-md 
+    padding-top: 100px
+    margin-bottom: 100px
+  +media-sm
+    padding-top: 50px
+    margin-bottom: 50px
+
+.sign__title 
+  position: relative
+  color: #393635 
+  font-size: 62px
+  font-family: $font-mabry
+  font-weight: 900
+  margin-bottom: 56px
+  padding-bottom: 30px
+  &::after 
+    content: ''
+    position: absolute
+    left: 0
+    bottom: 0
+    width: 120px
+    height: 8px
+    background-color: $color-blue
+  +media-sm 
+    margin-bottom: 30px
+    font-size: 50px
+
+.sign__text 
+  font-size: 17px
+  font-weight: 600
+  color: #393635 
+  margin-bottom: 50px
+  line-height: 1.76
+  +media-sm 
+    margin-bottom: 30px
+
+.sign__form
+  input[type='text'],
+  select
+    width: 100%
+    margin-bottom: 38px
+    color: #A8AEFA
+    font-weight: 500
+    border: none 
+    outline: none 
+    border-bottom: 1px solid #E9EBFF
+    padding: 14px 14px 14px 0px
+    &::placeholder 
+      color: #A8AEFA
+  select
+    color: #A8AEFA
+  .sign__birthday
+    position: relative
+    padding-right: 25px
+    &::before 
+      content: ''
+      position: absolute
+      width: 22px
+      height: 22px
+      top: 0
+      right: 31px
+      background: url('../../img/7days.svg') no-repeat center
+  +media-sm 
+    input[type='text'],
+    select
+      margin-bottom: 25px
+
+.sign__agree-checkbox
+  display: none
+
+.sign__agree-checkbox:checked + .sign__agree-label
+  &::before 
+    background: $color-blue url('../img/checked.svg') no-repeat center
+
+.sign__agree-label
+  position: relative
+  display: block
+  font-size: 16px
+  font-weight: 500
+  padding-left: 37px
+  line-height: 1.75
+  margin-bottom: 32px
+  cursor: pointer
+  a 
+    color: $color-blue
+    transition: .3s 
+  a:hover
+    text-shadow: 0 0 0.5px $color-blue
+
+  
+  &::before 
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 22px 
+    height: 22px
+    border-radius: 50%
+    background-color: $color-blue
+    
+.sign__form-submit
+  width: 100%
+  .button 
+    width: 100%
+    text-align: center
+
+.sign__instagram-text
+  font-size: 16px
+  font-weight: bold
+  margin-bottom: 28px
+  color: #606060
+
+.sign__instagram-btn
+  text-align: center
+  span 
+    display: inline-block
+    vertical-align: middle
+    margin-right: 14px
+    margin-top: -2px
+    width: 21px
+    height: 21px
+    background: url('../../img/instagram.svg') no-repeat center
+  +media-sm 
+    .button 
+      padding: 17px
+
+.sign__instagram
+  margin-bottom: 56px
+
+.sign__email
+  font-size: 16px
+  font-weight: bold
+  margin-bottom: 28px
+  color: #606060
+
+.sign__question
+  display: block
+  color: $color-blue 
+  font-weight: 500
+  text-align: center
+  transition: .3s 
+  margin-bottom: 26px
+  &:hover
+    text-shadow: 0 0 0.5px $color-blue
+
+
+
+
+
+
+.sign-1
+  .sign-wrap 
+    max-width: 484px
+
+.sign-2
+  .sign-wrap 
+    max-width: 720px
+  .sign__form
+    margin-bottom: 40px
+
+.sign-2__wrap
+  max-width: 542px
+  +media-md 
+    margin-left: auto
+    margin-right: auto
+
+.sign-3
+  .sign-wrap 
+    max-width: 526px
+  .sign__form
+    margin-bottom: 40px
+
+.sign-4
+  .sign-wrap 
+    max-width: 515px

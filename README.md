@@ -14,7 +14,13 @@
 - https://sergey-shovkoplyas.github.io/videoapp/app/wallet.html 
 - https://sergey-shovkoplyas.github.io/videoapp/app/category-2.html 
 - https://sergey-shovkoplyas.github.io/videoapp/app/celebrity.html 
+-
 - https://sergey-shovkoplyas.github.io/videoapp/app/download.html 
+- https://sergey-shovkoplyas.github.io/videoapp/app/invite.html
+- https://sergey-shovkoplyas.github.io/videoapp/app/sign-1.html
+- https://sergey-shovkoplyas.github.io/videoapp/app/sign-2.html
+- https://sergey-shovkoplyas.github.io/videoapp/app/sign-3.html
+- https://sergey-shovkoplyas.github.io/videoapp/app/sign-4.html
 
 Start template with (optional)
 - normalize.css

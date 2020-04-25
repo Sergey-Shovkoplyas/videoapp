@@ -1,0 +1,74 @@
+.invite-wrap 
+  max-width: 542px
+  padding-top: 150px
+  +media-1360 
+    margin-left: auto 
+    margin-right: auto
+    margin-bottom: 100px
+  +media-md 
+    padding-top: 100px
+  +media-sm
+    padding-top: 50px 
+
+
+.invite__title
+  color: #393635 
+  font-size: 62px
+  font-family: $font-mabry
+  font-weight: 900
+  margin-bottom: 10px
+  +media-sm 
+    font-size: 50px
+
+.invite__subtitle
+  color: #393635 
+  font-size: 40px
+  font-family: $font-mabry
+  font-weight: 900
+  margin-bottom: 37px
+  span 
+    color: $color-blue
+  +media-sm 
+    font-size: 35px
+    margin-bottom: 25px
+
+.invite__text
+  font-size: 17px
+  font-weight: 600
+  color: #393635 
+  margin-bottom: 40px
+  line-height: 1.76
+
+.invite__link-wrap
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+
+.invite__link 
+  width: 450px
+  color: $color-blue
+  font-weight: 500
+  padding-bottom: 14px
+  border-bottom: 1px solid #E9EBFF
+  +media-sm 
+    width: 238px
+
+.invite__copy 
+  position: relative
+  width: 43px
+  height: 43px
+  background-color: $color-blue 
+  border-radius: 50%
+  cursor: pointer
+  transition: .3s
+  &:hover 
+    transform: scale(1.05)
+  &::before 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 13px
+    transform: translate(0, -50%)
+    width: 17px 
+    height: 18px
+    background: url('../img/copy.svg') no-repeat center

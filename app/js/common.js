@@ -1,8 +1,8 @@
-$( document ).ready(function() {
+$(document).ready(function () {
 
 	// ---------------------- #search-open --------------------------
 
-	$('#search-open').on('click', function() {
+	$('#search-open').on('click', function () {
 		$(this).toggleClass('active');
 		$('#search').fadeToggle();
 	});
@@ -10,19 +10,19 @@ $( document ).ready(function() {
 	// ---------------------- initialize sliders --------------------------
 
 	$('.line__slider').owlCarousel({
-		loop:true,
-		margin:26,
+		loop: true,
+		margin: 26,
 		responsive: {
-			0:{
+			0: {
 				items: 2
 			},
-			768:{
+			768: {
 				items: 4
 			},
-			992:{
+			992: {
 				items: 6
 			},
-			1200:{
+			1200: {
 				items: 9
 			},
 
@@ -30,29 +30,125 @@ $( document ).ready(function() {
 	});
 
 	$('.line__slider-category').owlCarousel({
-		loop:true,
-		margin:25,
-		nav:false,
+		loop: true,
+		margin: 25,
+		nav: false,
 		responsive: {
-			0:{
+			0: {
 				items: 2
 			},
-			768:{
+			768: {
 				items: 3
 			},
-			992:{
+			992: {
 				items: 4
 			},
-			1200:{
+			1200: {
 				items: 6
 			},
-			1440:{
+			1440: {
 				items: 7
 			},
-			1600:{
+			1600: {
 				items: 8
 			},
 		}
 	});
 
+	// ---------------------- initialize side sliders --------------------------
+
+	let mySwiper = new Swiper('.slider', {
+		direction: 'horizontal',
+		slidesPerView: 1,
+		spaceBetween: 30,
+		loop: true,
+		speed: 8000,
+		autoplay: {
+			delay: 0,
+			disableOnInteraction: true,
+			reverseDirection: false
+		},
+		breakpoints: {
+			767: {
+				slidesPerView: 3,
+			},
+			1361: {
+				direction: 'vertical',
+				slidesPerView: 'auto',
+				mousewheel: true,
+				freeMode: true,
+				loop: true,
+				spaceBetween: 50,
+			}
+		}
+	});
+
+	let mySwiper1 = new Swiper('.slider-1', {
+		direction: 'horizontal',
+		slidesPerView: 1,
+		spaceBetween: 30,
+		loop: true,
+		speed: 8000,
+		autoplay: {
+			delay: 0,
+			disableOnInteraction: true,
+			reverseDirection: true
+		},
+		breakpoints: {
+			767: {
+				slidesPerView: 3,
+			},
+			1361: {
+				direction: 'vertical',
+				slidesPerView: 'auto',
+				mousewheel: true,
+				freeMode: true,
+				loop: true,
+				spaceBetween: 50,
+			}
+		}
+	});
+
+
+
+	$(".slider, .slider-1").hover(function () {
+		(this).swiper.autoplay.stop();
+	}, function () {
+		(this).swiper.autoplay.start();
+	});
+
+
+
+
 });
+
+
+
+
+
+
+/* let mySwiper = new Swiper('.slider', {
+	direction: 'horizontal',
+	slidesPerView: 1,
+	spaceBetween: 30,
+	loop: true,
+	speed: 8000,
+	autoplay: {
+		delay: 0,
+		disableOnInteraction: true,
+		reverseDirection: false
+	},
+	breakpoints: {
+		767: {
+			slidesPerView: 3,
+		},
+		1361: {
+			direction: 'vertical',
+			slidesPerView: 'auto',
+			mousewheel: true,
+			freeMode: true,
+			loop: true,
+			spaceBetween: 50,
+		}
+	}
+}); */
