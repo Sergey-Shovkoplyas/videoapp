@@ -1,0 +1,156 @@
+.profile__wrap
+  max-width: 856px 
+  margin: 0 auto
+  margin-bottom: 180px
+  +media-md 
+    margin-bottom: 100px
+  +media-sm
+    margin-bottom: 60px
+  
+
+.profile__top 
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin-bottom: 72px
+  +media-sm 
+    margin-bottom: 50px
+
+.profile__top-left,
+.profile__top-right 
+  width: 368px
+  +media-md 
+    width: 320px
+  +media-sm
+    width: 100%
+
+.profile__top-left
+  display: flex
+  justify-content: space-between
+  align-items: center
+  +media-sm 
+    justify-content: flex-start
+
+.profile__ava-img
+  width: 174px
+  height: 174px
+  border-radius: 50%
+  overflow: hidden 
+  img 
+    width: 100%
+  +media-sm 
+    width: 120px
+    height: 120px
+    margin-right: 20px
+
+.profile__ava-text
+  font-size: 15px
+  font-weight: 500
+  color: $color-blue
+  transition: .3s
+  &:hover 
+    text-shadow: 0 0 0.5px $color-blue
+
+.profile__top-right
+  padding-top: 25px
+
+.profile__refer
+  font-weight: 500
+  color:#606060
+  margin-bottom: 30px
+  a 
+    font-size: 15px
+    display: inline-block
+    border-radius: 50%
+    text-align: center
+    width: 20px
+    height: 20px
+    margin-left: 7px
+    border: 1.2px solid $color-blue
+    color: $color-blue
+  +media-sm 
+    margin-bottom: 20px
+
+.profile__link-wrap
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  +media-374 
+    flex-wrap: wrap
+
+.profile__link 
+  width: 230px
+  color: $color-blue
+  font-weight: 500
+  padding-bottom: 14px
+  border-bottom: 1px solid #E9EBFF
+  +media-374 
+    margin-bottom: 10px
+
+.profile__copy-wrap
+  display: flex
+
+.profile__copy 
+  position: relative
+  width: 43px
+  height: 43px
+  margin-left: 8px
+  background-color: $color-blue 
+  border-radius: 50%
+  cursor: pointer
+  transition: .3s
+  &:hover 
+    transform: scale(1.05)
+  &::before 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 12px
+    transform: translate(0, -50%)
+    width: 19px 
+    height: 26px
+    background: url('../img/copy.svg') no-repeat center
+  &--share 
+    &::before 
+      background: url('../img/share.svg') no-repeat center
+  
+
+
+
+// ------------------ profile__form ---------------------
+
+.profile__form
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  input[type='text'],
+  select
+    width: 368px
+    margin-bottom: 38px
+    color: $color-blue
+    font-weight: 500
+    border: none 
+    outline: none 
+    border-bottom: 1px solid #E9EBFF
+    padding: 14px 14px 14px 0px
+    &::placeholder 
+      color: $color-blue
+  input[type='text'].profile__bio
+    width: 100%
+  +media-md
+    input[type='text'],
+    select
+      width: 320px
+  +media-sm 
+    input[type='text'],
+    select
+      margin-bottom: 25px
+  
+.profile__submit
+  display: flex
+  justify-content: flex-end
+  width: 100%
+  .button 
+    width: 370px
+    text-align: center
+

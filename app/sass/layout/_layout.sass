@@ -1,5 +1,5 @@
 .layout
-  outline: 1px solid green
+  // outline: 1px solid green
   display: flex
   justify-content: space-between
   .header
@@ -93,6 +93,13 @@
 .sign-2
   .layout__left
     height: 1960px
+  +media-1360 
+    .layout__left
+      height: auto
+
+.sign-contact
+  .layout__left
+    height: 1470px
   +media-1360 
     .layout__left
       height: auto
