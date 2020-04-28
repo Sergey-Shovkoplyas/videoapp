@@ -1,0 +1,98 @@
+// --------------------------- form-radio --------------------------
+  
+.form-radio 
+  display: flex
+  align-items: center
+  input[type="radio"]
+    display: none
+  input[type="radio"]:checked + label:after 
+    display: block
+  label 
+    position: relative
+    padding-left: 38px
+    color: $color-blue 
+    font-weight: 500
+    cursor: pointer
+    &:hover 
+      text-shadow: 0 0 0.5px $color-blue
+      &::before 
+        opacity: 1
+    &::before 
+      position: absolute
+      content: ''
+      top: 50% 
+      left: 0
+      width: 21px 
+      height: 21px
+      transform: translate(0, -50%)
+      border: 1px solid $color-blue
+      border-radius: 50%
+      opacity: 0.4
+      transition: .3s
+    &::after
+      display: none
+      position: absolute
+      content: ''
+      top: 50% 
+      left: 6px
+      width: 8.4px 
+      height: 8.4px
+      transform: translate(0, -50%)
+      background-color: $color-blue
+      border-radius: 50%
+      transition: .3s
+
+// --------------------------- form-text / form-select --------------------------
+
+.form-text,
+.form-select 
+  width: 100%
+  outline: none
+  border: none
+  color: $color-blue 
+  font-weight: 500
+  padding-bottom: 14px
+  border-bottom: 1px solid #E9EBFF
+  &::placeholder 
+    color: $color-blue
+
+// --------------------------- .form-checkbox --------------------------
+
+.form-checkbox
+  display: flex
+  align-items: center
+  input[type="checkbox"]
+    display: none
+  input[type="checkbox"]:checked + label:before
+    background: $color-blue url('../img/checked.svg') no-repeat center
+    opacity: 1
+  label
+    position: relative
+    display: block
+    font-size: 16px
+    font-weight: 500
+    padding-left: 37px
+    line-height: 1.75
+    margin-bottom: 32px
+    cursor: pointer
+    color:  #606060
+    &:hover 
+      text-shadow: 0 0 0.5px #606060
+    a 
+      color: $color-blue
+      transition: .3s 
+    a:hover
+      text-shadow: 0 0 0.5px $color-blue
+    &::before 
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      width: 22px 
+      height: 22px
+      border-radius: 50%
+      background-color: #fff 
+      border: 1px solid $color-blue
+      border-radius: 50%
+      opacity: 0.4
+      transition: .3s

@@ -1,0 +1,341 @@
+.order
+  .main-content
+    margin-top: 150px
+    background-color: $color-blue 
+  +media-sm 
+    .main-content
+      margin-top: 100px
+
+.order__wrapper
+  background-color: #fff
+  padding: 90px 116px 120px
+  border-bottom-left-radius: 20px
+  border-bottom-right-radius: 20px
+  margin-bottom: 153px
+  +media-lg 
+    padding: 90px 60px 120px
+  +media-md
+    padding: 90px 40px 120px
+    margin-bottom: 100px
+  +media-sm
+    padding: 40px 20px
+    margin-bottom: 50px
+
+.order__title
+  font-size: 62px
+  font-weight: 900
+  font-family: $font-mabry
+  color: #393635
+  margin-bottom: 28px
+  +media-sm
+    font-size: 40px
+
+.order__from
+  max-width: 450px
+  padding: 6px 33px
+  border-radius: 100px
+  font-size: 17px 
+  font-weight: 500
+  color: #fff 
+  background-color: $color-blue
+  margin-bottom: 27px
+  +media-sm
+    font-size: 16px
+
+.order__author
+  display: flex 
+  max-width: 265px
+  justify-content: space-between
+  align-items: center 
+  margin-bottom: 77px
+  +media-sm
+    margin-bottom: 40px
+
+.order__author-img
+  width: 72px
+  height: 72px
+  border-radius: 50%
+  overflow: hidden
+  img 
+    width: 100%
+
+.order__author-name
+  color: #393635 
+  font-size: 25px
+  font-weight: 900
+
+
+// ----------------------------- form -----------------------------
+
+
+
+.order__form-title
+  color: #393635 
+  font-size: 35px
+  font-weight: 900
+  margin-bottom: 45px
+  +media-sm 
+    font-size: 30px
+    margin-bottom: 20px
+
+.order__form-info
+  margin-bottom: 70px
+  .form-text,
+  .form-select 
+    margin-bottom: 43px
+  +media-sm 
+    margin-bottom: 50px
+    .form-text,
+    .form-select 
+      margin-bottom: 20px
+
+.order__form-info-row 
+  display: flex
+  justify-content: space-between
+  margin: 0 -60px
+  +media-1360 
+    margin: 0 -30px
+  +media-md 
+    margin: 0 -15px
+  +media-sm 
+    flex-wrap: wrap
+
+
+.order__form-info-col 
+  width: 33.33%
+  padding: 0 60px
+  +media-1360 
+    padding: 0 30px
+  +media-md 
+    padding: 0 15px
+  +media-sm 
+    width: 100%
+    margin-bottom: 30px
+
+.order__form-subtitle
+  color: #606060
+  font-weight: 500
+  margin-bottom: 32px
+  +media-sm 
+    margin-bottom: 25px
+
+.order__form-info-for 
+  display: flex
+  justify-content: space-between
+  margin-bottom: 57px
+  +media-md 
+    flex-wrap: wrap
+    margin-bottom: 26px
+    .form-radio:first-child
+      margin-bottom: 15px
+  +media-sm 
+    align-items: center
+    .form-radio:first-child
+      margin-bottom: 0px
+
+.order__form-info-instructions
+  font-weight: 500
+  color: #606060
+  margin-bottom: 27px
+
+.order__form-info-text
+  padding-bottom: 18px
+  border-bottom: 1px solid #E9EBFF
+  font-weight: 500
+  color: $color-blue
+  line-height: 1.875
+
+
+// ----------------------------- delivery -----------------------------
+
+.order__form-delivery
+  margin-bottom: 93px
+  .form-text
+    margin-bottom: 27px
+  +media-sm 
+    margin-bottom: 50px
+    margin-bottom: 15px
+
+.order__form-delivery-row
+  display: flex
+  justify-content: space-between
+  max-width: 827px
+  +media-sm 
+    flex-wrap: wrap
+
+.order__form-delivery-col
+  +media-md 
+    width: 48%
+  +media-sm 
+    width: 100%
+
+// ----------------------------- order__form-pay -----------------------------
+
+.order__form-pay-alert
+  font-weight: 500
+  color: #606060
+  margin-bottom: 45px
+  margin-bottom: 20px
+
+.order__form-pay-by
+  display: flex
+  justify-content: space-between
+  max-width: 410px
+  margin-bottom: 39px
+  +media-sm 
+    flex-wrap: wrap
+    margin-bottom: 30px
+    .form-radio:first-child 
+      margin-bottom: 15px
+
+.order__form-pay-cards
+  display: none
+  min-height: 43px
+  margin-bottom: 39px
+  +media-sm 
+    margin-bottom: 30px
+.order__form-pay-cards.active 
+  display: block
+
+.order__form-pay-row 
+  display: flex
+  justify-content: space-between
+  margin: 0 -60px
+  +media-1360 
+    margin: 0 -30px
+  +media-sm 
+    flex-wrap: wrap
+
+.order__form-pay-col
+  width: 33.33%
+  padding: 0 60px
+  +media-1360
+    padding: 0 30px
+  +media-sm 
+    width: 100%
+    margin-bottom: 15px
+
+
+.order__form-pay-coins
+  display: none
+  min-height: 43px
+  margin-bottom: 39px
+  div
+    display: inline-block
+    vertical-align: middle
+    width: 34px
+    img 
+      width: 100%
+  span 
+    display: inline-block
+    vertical-align: middle
+    font-size: 18px
+    font-weight: 900 
+    color: $color-blue
+    margin-left: 19px
+  +media-sm 
+    margin-bottom: 30px
+.order__form-pay-coins.active 
+  display: block
+
+.order__form-pay-btn
+  max-width: 237px
+  display: inline-block
+  vertical-align: middle
+  +media-sm 
+    width: 100%
+    max-width: none
+    margin-bottom: 15px
+
+.order__form-pay-dollars
+  display: inline-block
+  vertical-align: middle
+  color: #888888
+  font-weight: 500
+  margin-left: 33px
+  +media-sm 
+    margin-left: 0
+
+
+// ------------------------------- order__next ---------------------------------
+.order__next
+  max-width: 1230px 
+  margin: 0 auto
+  padding-bottom: 100px
+  +media-sm 
+    padding-bottom: 50px
+
+.order__next-title
+  position: relative
+  text-align: center
+  font-size: 50px
+  font-family: $font-mabry
+  font-weight: 900
+  color: #fff
+  margin-bottom: 87px
+  &::before 
+    content: 'what`s next?'
+    position: absolute
+    width: 710px
+    top: -77px
+    left: 50%
+    transform: translate(-50%, 0)
+    font-size: 105px
+    font-family: $font-mabry
+    font-weight: 900
+    color: #fff
+    text-align: center
+    opacity: 0.07
+  +media-lg 
+    &::before 
+      width: 590px
+      top: -37px
+      font-size: 95px
+      line-height: 0.8
+  +media-sm
+    margin-bottom: 30px
+    &::before
+      width: 500px 
+      font-size: 90px
+
+.order__next-row 
+  display: flex 
+  margin: 0 -52px
+  justify-content: space-between
+  +media-lg
+    margin: 0 -30px
+  +media-md 
+    flex-wrap: wrap
+    max-width: 500px
+    margin: 0 auto
+
+.order__next-img
+  position: relative
+  margin-bottom: 45px 
+  background: url('../img/order/lines.png') no-repeat right center
+  +media-sm
+    margin-bottom: 20px
+
+.order__next-col
+  width: 25%
+  padding: 0 52px
+  &:last-child 
+    .order__next-img
+      background: none
+  +media-lg 
+    padding: 0 30px
+  +media-md
+    width: 50%
+    margin-bottom: 30px
+  +media-sm
+    width: 100%
+
+.order__next-text
+  font-size: 17px
+  font-weight: 500
+  color: #fff
+  line-height: 1.765
+
+
+
+

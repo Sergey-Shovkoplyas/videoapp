@@ -223,3 +223,88 @@
   margin-bottom: 23px
   height: 65px
   background: url('../img/config/lines.png') no-repeat left top
+
+
+
+// ------------------------------------ config-2 ---------------------------
+
+.config__video 
+  margin-top: 90px
+  margin-bottom: 33px
+
+.config__link-wrap
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 28px
+  +media-374 
+    flex-wrap: wrap
+
+.config__link 
+  width: 230px
+  color: #fff
+  font-weight: 500
+  
+  +media-374 
+    margin-bottom: 10px
+
+.config__copy-wrap
+  display: flex
+  +media-sm 
+    margin-bottom: 10px
+
+.config__copy 
+  position: relative
+  width: 43px
+  height: 43px
+  margin-left: 8px
+  background-color: $color-blue 
+  border-radius: 50%
+  cursor: pointer
+  transition: .3s
+  &:hover 
+    transform: scale(1.05)
+  &::before 
+    content: ''
+    position: absolute
+    top: 50%
+    left: 12px
+    transform: translate(0, -50%)
+    width: 19px 
+    height: 26px
+    background: url('../img/copy.svg') no-repeat center
+  &--share 
+    &::before 
+      background: url('../img/share.svg') no-repeat center
+
+
+.config__download-btn
+  width: 222px
+  margin-bottom: 38px
+  +media-sm 
+    margin: 0 auto
+    margin-bottom: 38px
+
+.config__review
+  textarea 
+    height: 196px 
+    width: 100%
+    padding: 24px
+    padding: 29px
+    border: none
+    outline: none
+    border-radius: 20px 
+    background-color: #5555E7
+    color: #B7C8F8
+    font-size: 16px
+    font-weight: 500
+    margin-bottom: 23px
+.config__review-stars
+  margin-bottom: 23px
+
+.config__review-btn
+  width: 222px
+  .button
+    width: 100%
+  +media-sm 
+    margin: 0 auto

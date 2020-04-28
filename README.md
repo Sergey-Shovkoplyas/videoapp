@@ -28,6 +28,10 @@
 - https://sergey-shovkoplyas.github.io/videoapp/app/sign-contact-1.html 
 - https://sergey-shovkoplyas.github.io/videoapp/app/profile.html 
 - https://sergey-shovkoplyas.github.io/videoapp/app/config.html 
+-
+- https://sergey-shovkoplyas.github.io/videoapp/app/history-2.html
+- https://sergey-shovkoplyas.github.io/videoapp/app/config-2.html 
+- https://sergey-shovkoplyas.github.io/videoapp/app/order.html 
 
 Start template with (optional)
 - normalize.css
