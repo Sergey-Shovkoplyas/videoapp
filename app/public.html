@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Videocam public</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Template Basic Images Start -->
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body class="public">
+
+	<header class="header">
+		<div class="container">
+			<div class="header__row">
+				<div class="header__left">
+					<div class="header__logo">
+	
+						<a href="#"><img src="img/logo.svg" alt="videocam"></a>
+	
+					</div>
+				</div>
+				<div class="header__right">
+
+					<button class="header__search-open" id="search-open" type="button">
+						<span></span>
+					</button>
+					<div class="header__search" id="search">
+						<form class="header__search-form" action="#">
+							<input type="text" placeholder="start search">
+							<button type="submit"></button>
+						</form>
+					</div>
+					<div class="header__buttons">
+						<a href="#">login</a>
+						<a href="#">signup</a>
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="main-content">
+		<div class="container">
+			<div class="title">
+				<div class="title__text">
+					<h1>Profile settings</h1>
+				</div>
+			</div>
+			<div class="public__wrapper">
+				<form class="public__form" action="#">
+
+					<div class="public__item public__profile">
+						<div class="public__form-title">profile</div>
+						<div class="public__row">
+
+							<div class="public__col">
+								<input class="form-text" type="text" placeholder="Display Name">
+								<input class="form-text" type="text" placeholder="Tagline">
+								<input class="form-text" type="text" placeholder="Celebrity Fee">
+								<div class="public__profile-language">
+									<div class="public__profile-subtitle">Languages</div>
+									<div class="public__profile-language-row">
+										<div class="public__profile-language-col">
+											<div class="form-checkbox">
+												<input id="public-en" type="checkbox" name="English" checked>
+												<label for="public-en">English</label>
+											</div>
+										</div>
+
+										<div class="public__profile-language-col">
+											<div class="form-checkbox">
+												<input id="public-fr" type="checkbox" name="French" checked>
+												<label for="public-fr">French</label>
+											</div>
+										</div>
+
+										<div class="public__profile-language-col">
+											<div class="form-checkbox">
+												<input id="public-sp" type="checkbox" name="Spanish">
+												<label for="public-sp">Spanish</label>
+											</div>
+										</div>
+
+										<div class="public__profile-language-col">
+											<div class="form-checkbox">
+												<input id="public-it" type="checkbox" name="Italian" checked>
+												<label for="public-it">Italian</label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="public__col">
+								<div class="public__profile-textaria">
+									<textarea name="about" class="form-textarea">About you</textarea>
+								</div>
+								<div class="public__profile-url">
+									<div class="public__profile-subtitle">Profile URL</div>
+									<div class="profile__link-wrap">
+										<div class="profile__link">http://videocam.com/r/ABCD</div>
+										<div class="profile__copy-wrap">
+											<div class="profile__copy"></div>
+											<div class="profile__copy profile__copy--share"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="public__item public__categories">
+						<div class="public__form-title">categories</div>
+						<div class="public__row">
+							<div class="public__col">
+								<input class="form-text" type="text" placeholder="Main Category">
+							</div>
+							<div class="public__col">
+								<input class="form-text" type="text" placeholder="Sub Category">
+							</div>
+						</div>
+						<input class="form-text" type="text" placeholder="Tags">
+					</div>
+					<div class="public__item public__media">
+						<div class="public__form-title">media</div>
+						<div class="public__row">
+							<div class="public__col">
+								<div class="public__media-subtitle">Profile photo</div>
+								<div class="public__media-seurce">
+									<img src="img/photo.jpg" alt="photo">
+								</div>
+								<a href="#" class="public__media-upload">Upload</a>
+							</div>
+							<div class="public__col">
+								<div class="public__media-subtitle">Profile photo</div>
+								<div class="public__media-seurce">
+									<img src="img/photo.jpg" alt="photo">
+								</div>
+								<a href="#" class="public__media-upload">Upload</a>
+							</div>
+						</div>
+					</div>
+					<div class="public__item public__social">
+						<div class="public__form-title">social</div>
+						<div class="public__row">
+							<div class="public__col">
+								<input class="form-text" type="text" placeholder="Instagram">
+								<input class="form-text" type="text" placeholder="Youtube ">
+								<input class="form-text" type="text" placeholder="Snapchat">
+								<input class="form-text" type="text" placeholder="Twitch">
+							</div>
+							<div class="public__col">
+								<input class="form-text" type="text" placeholder="Facebook">
+								<input class="form-text" type="text" placeholder="Tiktok">
+								<input class="form-text" type="text" placeholder="Twitter">
+								<input class="form-text" type="text" placeholder="Linkedin">
+								<div class="public__form-submit"><button class="button" type="submit">save settings</button></div>
+							</div>
+						</div>
+					</div>
+
+				</form>
+			</div>
+			
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container container--1410">
+			<div class="footer__row">
+				<div class="footer__left">
+					<div class="footer__title">join maillist</div>
+					<div class="footer__subtitle">Subscribe for updates on new talent and features</div>
+					<div class="footer__form-wrap">
+						<form action="#" class="footer__form">
+							<input type="text" placeholder="enter your email">
+							<button type="submit"></button>
+						</form>
+					</div>
+				</div>
+				<div class="footer__right">
+					<div class="footer__right-row">
+						<div class="footer__app">
+							<a href="#"><img src="img/google-play.png" alt="google play"></a>
+							<a href="#"><img src="img/app-store.png" alt="app store"></a>
+							<span>© 2020 videocam + App</span>
+						</div>
+						<div class="footer__social">
+							<div class="footer__social-wrap">
+								<a href="#"><img src="img/instagram.svg" alt="videocam"></a>
+								<a href="#"><img src="img/twitter.svg" alt="videocam"></a>
+								<a href="#"><img src="img/facebook.svg" alt="videocam"></a>
+							</div>
+							<div class="footer__social-btn">
+								<button class="button button--purple" type="button">enroll as talent</button>
+							</div>
+						</div>
+					</div>
+					<div class="footer__nav">
+						<ul class="footer__nav-list">
+							<li><a href="#">Jobs</a></li>
+							<li><a href="#">Faq</a></li>
+							<li><a href="#">Privicy</a></li>
+							<li><a href="#">Terms</a></li>
+							<li><a href="#">Tea</a></li>
+							<li><a href="#">Merch</a></li>
+							<li><a href="#">Accessibility</a></li>
+							<li><a href="#">Press</a></li>
+							<li><a href="#">Help</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>

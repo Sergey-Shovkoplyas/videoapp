@@ -32,6 +32,9 @@
 - https://sergey-shovkoplyas.github.io/videoapp/app/history-2.html
 - https://sergey-shovkoplyas.github.io/videoapp/app/config-2.html 
 - https://sergey-shovkoplyas.github.io/videoapp/app/order.html 
+-
+- https://sergey-shovkoplyas.github.io/videoapp/app/public.html
+- https://sergey-shovkoplyas.github.io/videoapp/app/public-2.html
 
 Start template with (optional)
 - normalize.css
