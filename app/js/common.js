@@ -24,6 +24,12 @@ $(document).ready(function () {
 		$('#search').fadeToggle();
 	});
 
+	//------------------------- header__user toggle menu -------------------------------
+
+	$('.header__user').on('click', function () {
+		$(this).children('.header__user-menu').fadeToggle();
+	});
+
 	// ---------------------- initialize sliders --------------------------
 
 	$('.line__slider').owlCarousel({

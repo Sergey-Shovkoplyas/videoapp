@@ -9,6 +9,9 @@
   // box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .1)
   +media-sm 
     padding: 20px 0
+.header--user 
+  .header__right 
+    justify-content: flex-end 
   
 .header__row 
   position: relative
@@ -154,3 +157,52 @@
       font-size: 13px
       border-radius: 10px
       
+
+
+// ---------------------- header__user --------------
+
+.header__user 
+  position: relative
+  margin-left: 17px
+  padding: 0 60px
+  +media-sm
+    padding: 0
+    order: 4
+
+.header__user-img
+  position: relative
+  z-index: 1
+  width: 52px
+  height: 52px
+  border-radius: 50%
+  overflow: hidden
+  cursor: pointer
+  img 
+    width: 100%
+
+.header__user-menu
+  display: none
+  position: absolute
+  left: 0px
+  top: -53px
+  list-style: none 
+  margin: 0
+  padding: 130px 42px 45px
+  background-color: $color-blue
+  li
+    margin-bottom: 10px
+  a 
+    display: block
+    padding: 5px
+    font-size: 16px
+    font-weight: 500
+    color: #fff 
+    text-align: right
+  a:hover 
+    text-shadow: 0 0 1px #fff
+  +media-sm 
+    left: auto
+    right: -15px
+    top: 64px
+    padding: 30px
+

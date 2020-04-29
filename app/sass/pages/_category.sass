@@ -1,3 +1,40 @@
+.home__title
+  position: relative
+  width: 510px 
+  margin: 0 auto
+  padding-top: 200px
+  font-family: $font-mabry
+  font-weight: 900
+  color: #393635
+  font-size: 120px
+  line-height: 1
+  &::after 
+    position: absolute
+    content: ''
+    bottom: -30px
+    right: 50px 
+    height: 8px
+    width: 157px
+    background-color: $color-blue
+  +media-1360 
+    padding-top: 30px
+    margin-bottom: 80px
+  +media-sm 
+    font-size: 80px
+    width: auto
+    &::after 
+      right: 0
+
+.home__title-left
+  text-align: left
+.home__title-center
+  text-align: center
+.home__title-right
+  text-align: right
+
+
+// ------------------------- category ------------------------
+  
 .category__title-wrap
   padding-top: 60px 
   margin-bottom: 110px

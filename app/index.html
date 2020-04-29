@@ -25,47 +25,56 @@
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
-<body class="category">
+<body class="category home bg-home">
 
-	<header class="header">
-		<div class="container">
-			<div class="header__row">
-				<div class="header__left">
-					<div class="header__logo">
-	
-						<a href="#"><img src="img/logo.svg" alt="videocam"></a>
-	
+	<div class="layout">
+		<div class="layout__left">
+
+			slider
+
+		</div>
+		<div class="layout__right">
+			<header class="header">
+				<div class="container">
+					<div class="header__row">
+						<div class="header__left">
+							<div class="header__logo">
+			
+								<a href="#"><img src="img/logo.svg" alt="videocam"></a>
+			
+							</div>
+						</div>
+						<div class="header__right">
+		
+							<button class="header__search-open" id="search-open" type="button">
+								<span></span>
+							</button>
+							<div class="header__search" id="search">
+								<form class="header__search-form" action="#">
+									<input type="text" placeholder="start search">
+									<button type="submit"></button>
+								</form>
+							</div>
+							<div class="header__buttons">
+								<a href="#">login</a>
+								<a href="#">signup</a>
+							</div>
+			
+						</div>
 					</div>
 				</div>
-				<div class="header__right">
-
-					<button class="header__search-open" id="search-open" type="button">
-						<span></span>
-					</button>
-					<div class="header__search" id="search">
-						<form class="header__search-form" action="#">
-							<input type="text" placeholder="start search">
-							<button type="submit"></button>
-						</form>
-					</div>
-					<div class="header__buttons">
-						<a href="#">login</a>
-						<a href="#">signup</a>
-					</div>
-	
+			</header>
+			<div class="container main-content">
+				<div class="home__title">
+					<div class="home__title-left">Videos</div>
+					<div class="home__title-center">you’ll</div>
+					<div class="home__title-right">love.</div>
 				</div>
 			</div>
 		</div>
-	</header>
-	<main class="main-content">
-		<div class="container">
-			<div class="category__title-wrap">
-				<div class="category__title">
-					<h1>Videos you’ll love.</h1>
-				</div>
-			</div>
-		</div>
+	</div>
 
+	<main class="category__wrapper">
 		<section class="line line--blue">
 			<div class="container">
 				<div class="line__top">
