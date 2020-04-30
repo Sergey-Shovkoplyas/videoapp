@@ -30,7 +30,111 @@ $(document).ready(function () {
 		$(this).children('.header__user-menu').fadeToggle();
 	});
 
+	// ---------------------- custom video player --------------------------
+
+	
+
+/* 	$('.video').each(function(ind, element){
+
+		let $video = $(element).find('.video__video');
+		let $play = $(element).find('.video__play');
+		let $mute = $(element).find('.video__mute');
+		let $seek = $(element).find('.video__seek');
+
+		$play.on('click', playPouse);
+		$mute.on('click', muteUnmute);
+		$seek.on('change', videoSeek);
+		$video.on('timeupdate', seekUpdate);
+
+		$video.on('pause', function(){
+			$play.html('<i class="icon-play"></i>');
+		});
+
+		$video.on('play', function(){
+			$play.html('<i class="icon-pause"></i>');
+		});
+
+
+		function playPouse() {
+			if ($video[0].paused) {
+				$video[0].play();
+				$(this).html('<i class="icon-pause"></i>');
+			} else {
+				$video[0].pause();
+				$(this).html('<i class="icon-play"></i>');
+			}
+		}
+
+		function muteUnmute() {
+			if ($video[0].muted) {
+				$video[0].muted = false;
+				$(this).html('<i class="icon-volume"></i>');
+			} else {
+				$video[0].muted = true;
+				$(this).html('<i class="icon-volume1"></i>');
+			}
+		}
+
+		function videoSeek() {
+			let seekTo = $video[0].duration * ($seek[0].value / 100);
+			$video[0].currentTime = seekTo;
+		}
+
+		function seekUpdate() {
+			let newTime = $video[0].currentTime * (100 / $video[0].duration);
+			$seek[0].value = newTime;
+		}
+
+	}); */
+
+
+	// -----------------------------------------------
+
+	// let video = $('.video');
+
+
+
+	// class videoPlayer {
+	// 	constructor(video) {
+	// 		this.video = video;
+	// 		this.play = video.querySelector('.video__play');
+	// 		this.play.addEventListener('click', playPouse);
+	// 	}
+
+	// 	playPouse() {
+	// 		if (this.video.paused) {
+	// 			this.video.play();
+	// 			// $(this).html('Pouse');
+	// 		} else {
+	// 			this.video.pause();
+	// 			// $(this).html('Play');
+	// 		}
+	// 	}
+
+
+
+	// }
+
+	// video.each(function (ind, element) {
+	// 	let player = new videoPlayer(element);
+	// 	console.log(player.video);
+	// 	console.log(player.play);
+	// });
+
+
+
+
+
+	// let video1 = new videoPlayer(video[1]);
+	// console.log(video1.video);
+	// console.log(video1.play);
+
+
+
+
+
 	// ---------------------- initialize sliders --------------------------
+
 
 	$('.line__slider').owlCarousel({
 		loop: true,

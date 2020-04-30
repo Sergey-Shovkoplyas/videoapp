@@ -22,6 +22,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/ckin.min.css">
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
@@ -65,9 +66,16 @@
 				<div class="download__left">
 					<div class="download__video-wrap">
 						<div class="download__video">
-							<video width="100%" loop muted controls>
+
+							<video width="100%" preload="metadata" loop>
 								<source src="video/fashion-1.mp4" type="video/mp4">
 							</video>
+							
+							<!-- <div class="video__controls">
+								<button class="video__play"><i class="icon-play"></i></button>
+								<button class="video__mute"><i class="icon-volume1"></i></button>
+								<input class="video__seek" type="range" min="0" max="100" value="0" step="1">
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -155,6 +163,7 @@
 	
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/ckin.min.js"></script>
 	<script src="js/common.js"></script>
 
 </body>
