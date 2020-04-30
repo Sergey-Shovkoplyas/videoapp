@@ -182,9 +182,61 @@ $(document).ready(function () {
 		}
 	});
 
+	// ---------------------- vertical sliders --------------------------
+
+	let sliderMain = $('.slider-main');
+	let sliderMain2 = $('.slider-main-2');
+
+	sliderMain.slick({
+		centerMode: true,
+		arrows: false,
+		speed: 1000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000,
+		cssEase: 'linear',
+		infinite: true,
+		vertical: true,
+		verticalSwiping: true
+	});
+	sliderMain.on('wheel', (function(e) {
+		e.preventDefault();
+		if (e.originalEvent.deltaY < 0) {
+			$(this).slick('slickNext');
+		} else {
+			$(this).slick('slickPrev');
+		}
+	}));
+
+	sliderMain2.slick({
+		centerMode: true,
+		arrows: false,
+		speed: 4000,
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 0,
+		cssEase: 'linear',
+		infinite: true,
+		vertical: true,
+		verticalSwiping: true
+	});
+	sliderMain2.on('wheel', (function(e) {
+		e.preventDefault();
+		if (e.originalEvent.deltaY < 0) {
+			$(this).slick('slickNext');
+		} else {
+			$(this).slick('slickPrev');
+		}
+	}));
+
+
+	
+
 	// ---------------------- initialize side sliders --------------------------
 
-	$(".slider, .slider-1").css('display', 'none');
+	// $(".slider, .slider-1").css('display', 'none');
 
 	// let mySwiper = new Swiper('.slider', {
 	// 	direction: 'horizontal',
