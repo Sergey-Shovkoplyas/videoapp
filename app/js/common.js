@@ -190,11 +190,11 @@ $(document).ready(function () {
 	sliderMain.slick({
 		centerMode: true,
 		arrows: false,
-		speed: 1000,
+		speed: 6000,
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 0,
 		cssEase: 'linear',
 		infinite: true,
 		vertical: true,
